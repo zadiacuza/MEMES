@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: sans-serif;
+  background-image: url("assets/images/background.png");
+  background-size: cover;
+  background-position: center center;
+  overflow-x: hidden;
+  display: block !important; }
+
+p {
+  font-size: 16px;
+  line-height: 26px; }
+
+a {
+  text-decoration: none; }
+
+.login {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("assets/images/background.png");
+  background-size: cover;
+  background-position: center center; }
+  .login form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    margin: auto;
+    height: auto;
+    padding: 25px;
+    border-radius: 7px;
+    background-color: #fbfbfb;
+    box-shadow: 0px 2px 4px rgba(32, 33, 33, 0.666); }
+    .login form img {
+      text-align: center;
+      margin: 25px auto;
+      display: block;
+      width: 60%;
+      height: auto; }
+    .login form input {
+      display: block;
+      border-radius: 7px;
+      padding: 0px 10px;
+      height: 40px;
+      width: 100%;
+      margin-bottom: 25px;
+      border-bottom: solid 2px rgba(32, 33, 33, 0.666);
+      border-top: none;
+      border-left: none;
+      border-right: none; }
+    .login form input[type='password'] {
+      margin-bottom: 15px; }
+    .login form input[type='submit'] {
+      background-color: #1a64c5;
+      border-radius: 20px;
+      width: auto;
+      cursor: pointer;
+      padding: 0px 30px;
+      font-weight: 600;
+      color: #fff;
+      margin: 10px auto 10px auto; }
+      .login form input[type='submit']:hover {
+        background-color: #282828; }
+    .login form .formMeta {
+      margin-bottom: 25px; }
+      .login form .formMeta a {
+        color: #1a64c5;
+        float: right;
+        margin-top: 5px;
+        font-size: 12px; }
+        .login form .formMeta a:hover {
+          opacity: 0.7; }
+      .login form .formMeta a:first-child {
+        float: left; }
+
+nav {
+  height: 60px;
+  background-color: #282828;
+  color: #fff;
+  padding: 0px 20px;
+  position: relative; }
+  nav div {
+    float: left; }
+    nav div p {
+      float: left; }
+    nav div img {
+      width: 40px;
+      margin-right: 10px;
+      float: left;
+      border-radius: 100%;
+      height: 40px;
+      display: inline-block;
+      margin-top: 10px;
+      object-fit: cover; }
+  nav i {
+    float: right;
+    line-height: 60px !important;
+    font-size: 27px !important;
+    color: #fff;
+    cursor: pointer; }
+    nav i:hover {
+      opacity: 0.7; }
+  nav ul {
+    width: 300px;
+    height: auto;
+    background-color: #282828;
+    position: absolute;
+    top: 60px;
+    display: none;
+    right: 0;
+    list-style-type: none; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 50px 0px;
+        color: #fff; }
+        nav ul li a:hover {
+          opacity: 0.7; }
+
+#message {
+  width: 400px;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 7px;
+  background-color: #fbfbfb;
+  box-shadow: 0px 2px 4px rgba(32, 33, 33, 0.666); }
+  #message textarea {
+    width: 100%;
+    height: 100px;
+    display: block;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-bottom: solid 2px rgba(32, 33, 33, 0.666); }
+  #message input[type='submit'] {
+    background-color: #1a64c5;
+    border-radius: 30px;
+    width: auto;
+    cursor: pointer;
+    height: 50px;
+    padding: 0px 30px;
+    font-weight: 600;
+    border-bottom: solid 2px rgba(32, 33, 33, 0.666);
+    border: none;
+    color: #fff;
+    margin: 20px auto 10px auto; }
+    #message input[type='submit']:hover {
+      background-color: #282828; }
+
+#messages {
+  width: 100%;
+  margin-top: 20px;
+  border-top: white solid 1px;
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap; }
+  #messages article {
+    width: 27%;
+    margin: 20px 2% 20px 0px;
+    padding: 25px;
+    border-radius: 7px;
+    background-color: #fbfbfb; }
+    #messages article .postMeta {
+      font-style: italic;
+      font-size: 14px;
+      padding-bottom: 10px;
+      border-bottom: solid 1px black; }
+    #messages article .message {
+      margin: 20px 0px; }
+    #messages article img {
+      width: 100%;
+      height: auto; }
+    #messages article .rating form {
+      margin: 20px 0px; }
+    #messages article .rating .up div {
+      width: 20px;
+      height: 20px;
+      float: left;
+      position: relative;
+      margin-right: 15px; }
+      #messages article .rating .up div .thumbUp {
+        display: block;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      #messages article .rating .up div i {
+        font-size: 20px; }
+    #messages article .rating .down div {
+      width: 20px;
+      height: 20px;
+      float: left;
+      position: relative;
+      margin-right: 15px; }
+      #messages article .rating .down div .thumbDown {
+        display: block;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      #messages article .rating .down div i {
+        font-size: 20px; }
+
+footer {
+  text-align: center;
+  padding: 20px; }
+
+@media only screen and (max-width: 1171px) {
+  #messages article {
+    width: 43%; } }
+@media only screen and (max-width: 1071px) {
+  nav ul {
+    width: 100% !important;
+    left: 0; }
+
+  #message {
+    width: auto;
+    margin: 20px 20px; }
+
+  #messages {
+    display: block;
+    width: auto; }
+    #messages article {
+      width: auto;
+      margin-right: 0; } }
+
+/*# sourceMappingURL=style.css.map */
